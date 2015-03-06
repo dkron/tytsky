@@ -23,7 +23,7 @@ module TytskyModules
     end
 
     def random_time
-      "Давайте стендап в 11:%02d" % Time.now.hour < 11 ? rand(59) : rand(Time.now.min..59)
+      "Давайте стендап в 11:%02d" % (Time.now.hour < 11 ? rand(59) : rand(Time.now.min..59))
     end
 
     def too_late_for_standup?
